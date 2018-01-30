@@ -16,7 +16,7 @@ class Shoe
   # writer & BRANDS logic
   def brand=(brand)
     @brand = brand
-    BRANDS << brand
+    BRANDS << brand if BRANDS.include?(brand) == false
   end
 
 end
